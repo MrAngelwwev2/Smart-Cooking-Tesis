@@ -1,0 +1,1616 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/usuario/ontologies/2022/6/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/usuario/ontologies/2022/6/untitled-ontology-8"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:smartcooking="http://www.semanticweb.org/usuario/smartcooking#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/usuario/smartcooking"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#contieneIngrediente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/usuario/smartcooking#contieneIngrediente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Platillos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Propiedad para relacionar un platillo con los ingredientes que contiene.</rdfs:comment>
+        <rdfs:label xml:lang="es">contieneIngrediente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Acidos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Acidos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Frutos"/>
+        <rdfs:comment xml:lang="es">Clase que representa frutos ácidos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Acidos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Aderezos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Aderezos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa aderezos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Aderezos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Blancas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Blancas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Carnes"/>
+        <rdfs:comment xml:lang="es">Clase que representa carnes blancas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Blancas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Carnes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Carnes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa carnes.</rdfs:comment>
+        <rdfs:label xml:lang="es">Carnes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Dulces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Dulces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Frutos"/>
+        <rdfs:comment xml:lang="es">Clase que representa frutos dulces.</rdfs:comment>
+        <rdfs:label xml:lang="es">Dulces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Enriquecido -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Enriquecido">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Granos"/>
+        <rdfs:comment xml:lang="es">Clase que representa granos enriquecidos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Enriquecido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Frutos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Frutos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa frutos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Frutos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Granos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Granos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa granos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Granos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Hortalizas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Hortalizas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Vegetales"/>
+        <rdfs:comment xml:lang="es">Clase que representa hortalizas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Hortalizas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Hortalizas_cruciferas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Hortalizas_cruciferas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Vegetales"/>
+        <rdfs:comment xml:lang="es">Clase que representa hortalizas crucíferas.</rdfs:comment>
+        <rdfs:label xml:lang="es">HortalizasCruciferas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Ingredientes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Ingredientes">
+        <rdfs:comment xml:lang="es">Clase que representa un ingrediente.</rdfs:comment>
+        <rdfs:label xml:lang="es">Ingrediente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Integral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Integral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Granos"/>
+        <rdfs:comment xml:lang="es">Clase que representa granos integrales.</rdfs:comment>
+        <rdfs:label xml:lang="es">Integral</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Líquidos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Líquidos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa líquidos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Liquidos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Marina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Marina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Carnes"/>
+        <rdfs:comment xml:lang="es">Clase que representa carnes marinas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Marinas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Neutros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Neutros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Frutos"/>
+        <rdfs:comment xml:lang="es">Clase que representa frutos neutros.</rdfs:comment>
+        <rdfs:label xml:lang="es">Neutros</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#No_procesados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#No_procesados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa ingredientes no procesados.</rdfs:comment>
+        <rdfs:label xml:lang="es">NoProcesados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Platillos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Platillos">
+        <rdfs:comment xml:lang="es">Clase que representa un platillo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Platillo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Postre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Postre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Platillos"/>
+        <rdfs:comment xml:lang="es">Clase que representa un platillo de postre.</rdfs:comment>
+        <rdfs:label xml:lang="es">Postre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Procesados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Procesados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa ingredientes procesados.</rdfs:comment>
+        <rdfs:label xml:lang="es">Procesados</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Refinado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Refinado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Granos"/>
+        <rdfs:comment xml:lang="es">Clase que representa granos refinados.</rdfs:comment>
+        <rdfs:label xml:lang="es">Refinado</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Refresco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Refresco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Platillos"/>
+        <rdfs:comment xml:lang="es">Clase que representa un platillo de refresco.</rdfs:comment>
+        <rdfs:label xml:lang="es">Refresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Rojas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Rojas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Carnes"/>
+        <rdfs:comment xml:lang="es">Clase que representa carnes rojas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Rojas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Segundo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Segundo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Platillos"/>
+        <rdfs:comment xml:lang="es">Clase que representa un platillo de segundo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Segundo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#SegundoMaritimo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#SegundoMaritimo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Segundo"/>
+        <rdfs:comment xml:lang="es">Clase que representa un segundo marítimo.</rdfs:comment>
+        <rdfs:label xml:lang="es">SegundoMaritimo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Segundo"/>
+        <rdfs:comment xml:lang="es">Clase que representa un segundo no marítimo.</rdfs:comment>
+        <rdfs:label xml:lang="es">SegundoNoMaritimo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Semiácidos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Semiácidos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Frutos"/>
+        <rdfs:comment xml:lang="es">Clase que representa frutos semiacidos.</rdfs:comment>
+        <rdfs:label xml:lang="es">Semiacidos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Sopa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Sopa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Platillos"/>
+        <rdfs:comment xml:lang="es">Clase que representa un platillo de sopa.</rdfs:comment>
+        <rdfs:label xml:lang="es">Sopa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#SopaMaritima -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#SopaMaritima">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Sopa"/>
+        <rdfs:comment xml:lang="es">Clase que representa una sopa marítima.</rdfs:comment>
+        <rdfs:label xml:lang="es">SopaMaritima</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#SopaNoMaritima -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#SopaNoMaritima">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Sopa"/>
+        <rdfs:comment xml:lang="es">Clase que representa una sopa no marítima.</rdfs:comment>
+        <rdfs:label xml:lang="es">SopaNoMaritima</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Vegetales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Vegetales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Ingredientes"/>
+        <rdfs:comment xml:lang="es">Clase que representa vegetales.</rdfs:comment>
+        <rdfs:label xml:lang="es">Vegetales</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Verduras_de_bulbo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Verduras_de_bulbo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Vegetales"/>
+        <rdfs:comment xml:lang="es">Clase que representa verduras de bulbo.</rdfs:comment>
+        <rdfs:label xml:lang="es">VerdurasDeBulbo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#Verduras_de_raiz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/usuario/smartcooking#Verduras_de_raiz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Vegetales"/>
+        <rdfs:comment xml:lang="es">Clase que representa verduras de raíz.</rdfs:comment>
+        <rdfs:label xml:lang="es">VerdurasDeRaiz</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aceite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aceite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aceite_de_oliva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aceite_de_oliva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aceite_vegetal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aceite_vegetal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aceituna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aceituna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Acidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#acelga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#acelga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#achiote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#achiote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#agua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#agua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aji -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aji">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aji_amarillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aji_amarillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aji_especial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aji_especial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Aderezos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aji_limo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aji_limo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Aderezos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#aji_panca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aji_panca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Aderezos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#ajo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#ajo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Verduras_de_bulbo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#ajonjoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#ajonjoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#No_procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#albahaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#albahaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#almeja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#almeja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#anis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#anis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#apio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#apio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#arroz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#arroz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Integral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#arroz_con_mariscos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#arroz_con_mariscos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#almeja"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arroz"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#calamar"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#choro"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#concha"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#culantro"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#langostino"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#limon"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pulpo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#arveja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#arveja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#azucar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#azucar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#bicarbonato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#bicarbonato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#calamar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#calamar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#caldo_de_carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#caldo_de_carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#caldo_de_pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#caldo_de_pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#camaron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#camaron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#camote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#camote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Verduras_de_raiz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#canela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#canela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#carne_de_chancho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#carne_de_chancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Rojas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#carne_de_res -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#carne_de_res">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Rojas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#carne_de_vaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#carne_de_vaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Rojas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#carne_molida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#carne_molida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Rojas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#cebolla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#cebolla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Verduras_de_bulbo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#cebolla_china -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#cebolla_china">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#cerveza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#cerveza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#ceviche_de_pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#ceviche_de_pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#culantro"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#lechuga"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pescado"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#chancaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#chancaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#choclo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#choclo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#No_procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#choncholi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#choncholi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Rojas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#choro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#choro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#chuño -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#chuño">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#No_procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#clavo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#clavo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#coco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#coco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#comino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#comino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#concha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#concha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#concha_negra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#concha_negra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#culantro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#culantro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas_cruciferas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#esencia_de_vainilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#esencia_de_vainilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#espinaca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#espinaca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#fideo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#fideo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#frijol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#frijol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#No_procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#galleta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#galleta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#garbanzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#garbanzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#No_procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#habas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#habas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#harina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#harina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#hierbabuena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#hierbabuena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#hoja_de_platano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#hoja_de_platano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#hongo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#hongo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#huevo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#huevo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#ketchup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#ketchup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#kion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#kion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#langostino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#langostino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#laurel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#laurel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#leche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#leche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#leche_condensada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#leche_condensada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#leche_evaporada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#leche_evaporada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#lechuga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#lechuga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#levadura_seca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#levadura_seca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#limo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#limo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Acidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#limon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#limon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Acidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#lomo_fino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#lomo_fino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Rojas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#lomo_saltado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#lomo_saltado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arroz"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_de_res"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#papa"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#tomate"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#vinagre"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#papa_rellena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#tomate"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#papa"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_de_vaca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#huevo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceituna"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#escabeche_de_pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pescado"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#lechuga"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#huevo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceituna"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#camote"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#caldo_de_pescado"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#vinagre"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#picarones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Postre"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#camote"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#levadura_seca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#zapallo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#anis"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#clavo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#canela"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#agua"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#harina"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#chilcano_de_pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SopaMaritima"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pescado"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#culantro"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#papa"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#perejil"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#apio"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#leche_de_tigre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pescado"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#culantro"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#agua"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#kion"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#apio"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_limo"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#chicharron_de_chancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#tomate"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#papa"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#limon"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_de_chancho"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#apio"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#poro"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sazonador"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#hierbabuena"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#arroz_chaufa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#kion"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arroz"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#huevo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla_china"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sillao"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pollo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#salchicha"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pavo_al_horno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#mostaza"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#limon"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_panca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#naranja"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#vino"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pavo"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#aji_de_gallina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#papa"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_amarillo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite_de_oliva"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#kion"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#leche"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#apio"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pan"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pechuga_de_gallina"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#arroz_con_leche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Postre"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arroz"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#clavo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#canela"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#agua"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#leche_condensada"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#leche_evaporada"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#esencia_de_vainilla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#naranja"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pasa"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#tallarines_rojos_peruanos_con_pollo_o_carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#tomate"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_panca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#comino"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#fideo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#laurel"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#hongo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#zanahoria"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pollo"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mazamorra_morada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Postre"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#clavo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#canela"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#agua"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#limon"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#membrillo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#manzana"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#maiz_morado"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#piña"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#arroz_a_la_jardinera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arroz"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#agua"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arveja"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#acelga"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#zanahoria"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#garbanzo"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#empanada_de_carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Postre"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_amarillo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_panca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite_de_oliva"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#comino"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#oregano"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_molida"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#tamales_de_pollo_o_chancho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#huevo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceituna"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_amarillo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#harina"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#mani"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#comino"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pollo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#hoja_de_platano"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#turron_de_doña_pepa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Postre"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#anis"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#harina"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#leche"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#yema"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#manteca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajonjoli"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#polvo_de_hornear"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#albondigas_de_carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#huevo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla_china"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_molida"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#carapulcra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#arroz"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#papa"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#ajo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_panca"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#mani"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_de_chancho"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#tallarin_saltado_criollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#SegundoNoMaritimo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sal"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#pimienta"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#carne_de_res"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#tomate"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#vinagre"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aji_amarillo"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#cebolla_china"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#sillao"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#kion"/>
+        <smartcooking:contieneIngrediente rdf:resource="http://www.semanticweb.org/usuario/smartcooking#aceite_de_oliva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#maiz_morado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#maiz_morado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#maizena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#maizena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#mani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#manjar_blanco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#manjar_blanco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#manteca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#manteca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#mantequilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mantequilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#manzana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#manzana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#mariscos_variados -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mariscos_variados">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#mayonesa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mayonesa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#membrillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#membrillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#miel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#miel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#mondongo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mondongo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Blancas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#mostaza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#mostaza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#naranja -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#naranja">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Acidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#oregano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#oregano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#palillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#palillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#papa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#papa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Verduras_de_raiz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pasa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pasa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Blancas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pavo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pavo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Blancas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pecana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pecana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Neutros"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pechuga_de_gallina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pechuga_de_gallina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Blancas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#perejil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#perejil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pescado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pescado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pimienta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pimienta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#piña -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#piña">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Acidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#platano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#platano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Blancas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#polvo_de_hornear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#polvo_de_hornear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#poro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#poro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#pulpo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#pulpo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Marina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#queso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#queso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#rocoto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#rocoto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#romero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#romero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#sal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#sal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#No_procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#salchicha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#salchicha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#sazonador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#sazonador">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#sillao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#sillao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Aderezos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#tomate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#tomate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#vinagre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#vinagre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#vino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#vino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Líquidos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#yema -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#yema">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Procesados"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#yuca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#yuca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#zanahoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#zanahoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Hortalizas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/usuario/smartcooking#zapallo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/usuario/smartcooking#zapallo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/usuario/smartcooking#Dulces"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
